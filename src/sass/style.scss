@@ -1,0 +1,40 @@
+@import 'base/variables';
+*{
+	font-family: 'Museo Sans', sans-serif;
+}
+.container	{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.title  {
+	font-weight: 700;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	color: #0D0D0D;
+	text-transform: uppercase;
+    
+
+}
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/about';
+@import 'base/media';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/tiles';
+@import 'blocks/landscape';
+
+.divider {
+
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 4px auto;
+    
+}

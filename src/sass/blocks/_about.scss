@@ -1,0 +1,25 @@
+.about   {
+    height: 600px;
+    position: relative;
+    background: #fff;
+    padding: 30px 0 64px;
+    .title  {
+        font-weight: 700;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color: #0D0D0D;
+        &_benefits  {
+            margin-bottom: 60px;
+            font-size: 36px;
+        }
+    }
+    &__descr {
+        position: absolute;
+        top: 114px;
+        left: 53%;
+        width: 468px;
+
+    }
+    
+}

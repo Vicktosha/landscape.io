@@ -1,0 +1,76 @@
+.footer {
+    background: url("../img/bg_1.jpg") center (center/cover) no-repeat;
+    display: flex;
+    justify-content: center;
+    &__info {
+        width: 400px;
+        // height: 270px;
+        background: $main-color;
+        padding: 15px 0 15px 0;
+    }
+    &__phone {
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        display: block;
+        text-align: center;
+        color: #FFFFFF;
+        &:hover {
+            color:#FFFFFF;
+            text-decoration: none;
+        }
+    }
+    &__email {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        display: block;
+        text-align: center;
+        color: #FFFFFF;
+        --c: #1095c1;
+        line-height: 1.2em;
+        background: 
+          conic-gradient(from -135deg at 100%  50%,#fff  90deg,#0000 0) 0    var(--p,0%),
+          conic-gradient(from -135deg at 1.2em 50%,#0000 90deg,#fff  0) 100% var(--p,0%),
+          var(--c);
+        -webkit-background-clip: text;
+                background-clip: text;
+        background-size: var(--s, 0%) 200%;
+        background-repeat: no-repeat;
+        color: transparent;
+        position: relative;
+        transition: .4s ease-in, background-position 0s;
+    }
+        &__email:before {
+        content:"";
+        position:absolute;
+        inset:0;
+        z-index:-1;
+        background: 
+          conic-gradient(from -135deg at 100%  50%,var(--c) 90deg,#0000 0) 0    var(--p,0%),
+          conic-gradient(from -135deg at 1.2em 50%,#0000 90deg,var(--c) 0) 100% var(--p,0%);
+        background-size: inherit;
+        background-repeat: no-repeat;
+        }
+        &__email:hover {
+        --p: 100%;
+         /* it should be .6em (1.2em/2) but we use a litte bigger to avoid gaps */
+        --s: calc(50% + .61em);
+        }
+      
+      
+        body {
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        }
+        &__email {
+
+
+        cursor: pointer;
+        }
+    
+}

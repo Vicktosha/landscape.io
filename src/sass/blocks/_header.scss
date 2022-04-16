@@ -1,0 +1,37 @@
+.header {
+    // background-color: rgba(217, 226, 187, 0.5);
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+	&__official	{
+        font-size: 25px;
+        font-weight: 700;
+        color: #FFFFFF;
+	}
+	&__name	{
+		font-weight: 700;
+		font-size: 25px;
+		color: #FFFFFF;
+		text-align: center;
+		span	{
+			display: block;
+			font-size: 30px;
+		}
+	}
+	&__phone	{
+		display: block;
+		font-weight: 700;
+		font-size: 18px;
+		color: $main-color;
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+	}
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+    }
+}

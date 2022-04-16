@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обслуживание</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="promo__wrapperMain">
+                <a href="index.html" class="promo__header">"Природарегион"</a>
+            </div>
+            <a href="#footer" class="promo__contacts">Контакты</a>
+            <a href="#about" class="promo__about">О нас</a>
+            <a href="#discount" class="promo__discount">Скидки</a>
+            <div class="header__contacts">
+                <a href="tel:+79375472235" class="header__phone">
+                    +7-937-547-22-35
+                </a>
+                <button data-modal="consultation" class="button">заказать звонок</button>
+            </div>
+        </header>
+    </div>
+
+        <div class="divider"></div>
+
+    <section class="landscape">
+        <div class="container">
+            <div class="title title_benefits">Обслуживание</div>
+            <div class="landscape__wrapper">
+                <div class="landscape__item">
+                    <span class="landscape__descr">Уход за садовыми участками</span>
+                    <img src="img/item.jpg" alt="item" class="landscape__image">
+                </div>
+                <div class="landscape__item landscape__item_rotate">
+                    <span class="landscape__descr landscape__descr_rotate">Покос газона и сорной растительности, включая камыш</span>
+                    <img src="img/item.jpg" alt="item" class="landscape__image landscape__image_rotate">
+                </div>
+                <div class="landscape__item">
+                    <span class="landscape__descr">Обрезка кастарников и деревьев</span>
+                    <img src="img/item.jpg" alt="item" class="landscape__image">
+                </div>
+                <div class="landscape__item landscape__item_rotate">
+                    <span class="landscape__descr landscape__descr_rotate">Консультация и подбор садового оборудования</span>
+                    <img src="img/item.jpg" alt="item" class="landscape__image landscape__image_rotate">
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="consultation" id="discount">
+        <div class="container">
+            <div class="title title_consultation">
+                Получите бесплатную консультацию 
+            </div>
+            <div class="consultation__description">
+                Просто заполните форму заявки <br>и мы перезвоним вам в течении 10 минут
+            </div>
+            <form id="consultation-form" class="feed-forms" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+            <div class="title_discount">Скидки</div>
+                <ul class="discount__descr">
+                    <li>Какая то категория граждан 5-10%</li>
+                    <li>Другая категория 5-10%</li>
+                    <li>При общей сумме заказа от 500 000 руб.</li>
+                </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="title title_benefits">О нас</div>
+            <div class="carousel carousel_about">
+                <!-- <div class="container"> -->
+                    <div class="carousel__inner carousel__inner_about">
+                        <div>
+                            <img src="img/slide1.jpg" alt="slide1">
+                        </div>
+                        <div>
+                            <img src="img/slide2.jpg" alt="slide2">
+                        </div>
+                        <div>
+                            <img src="img/slide3.jpg" alt="slide3">
+                        </div>
+                        </div>
+                <!-- </div> -->
+            </div>
+            <div class="about__descr">
+                <span class="about__job">
+                    За 10 лет работы мы успели реализовать более 100 проектов с различной постановкой задачи.
+                    Работаем с питомниками с научной базой.
+                    Ландшафтный дизайн, полив, малые архитектурные формы, обработка от вредителей и     обслуживание проделанных работ.
+                </span>
+                <br><br>
+                <span class="about__socialJob">
+                    Наша общественно-социальная работа:
+                    <ul>
+                        <li>Благоустройство воинских мемориалов, воинских захоронений</li>
+                        <li>Работа в поисковых отрядах</li>
+                        <li>Работа в детских дошкольных учреждениях</li>
+                        <li>Участие в региональных гуманитарных программах</li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__info">
+            <a class="footer__phone" href="tel:+79375472235">+7-937-547-22-35</a>
+            <a class="footer__phone" href="tel:+79375542383">+7-937-554-23-83</a>
+            <a href="mailto:prirodaregion@yandex.ru" class="footer__email">prirodaregion@yandex.ru</a>
+            
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-forms feed-forms_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-forms feed-forms_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+            
+        </div>
+
+    </div>
+
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
