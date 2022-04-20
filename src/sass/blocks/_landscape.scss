@@ -1,12 +1,16 @@
 .landscape {
+    background: url(../img/bg_11.png);
     padding: 15px 0 25px 0;
+    margin-bottom: 20px;
     &__wrapper {
+        
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     &__item {
-        border: 1px solid black;
+        background-color: #fff;
+        border: 10px solid white;
         border-radius: 5px;
         margin-top: 20px;
         height: 250px;

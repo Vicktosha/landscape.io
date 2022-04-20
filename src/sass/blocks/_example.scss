@@ -1,0 +1,48 @@
+.example {
+    display: block;
+
+    &__wrap {
+        padding: 0 10px 0 10px;
+        background: url("../img/bg_1.jpg") center (center/cover) no-repeat ;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    &__item {
+        width: 300px;
+        font-size: 24px;
+        font-weight: 500;
+        color: azure;
+        text-decoration: none;
+        margin-top: 30px;
+        margin-bottom: 33px;
+        text-align: center;
+        // width: 300px;
+        border: 1px;
+        display: block;
+        transition: 1.5s all;
+        &:hover {
+            text-decoration: solid;
+            color: azure;
+        }
+        &:hover  .link__img {
+            top: 15%;
+            left: 31vw;
+            transform: rotateY(-50%);
+            display: block;
+            transition: 1.5s all;  
+        }
+        
+        .link__img {
+
+            position: absolute;
+            // width: 700px;
+            height: 500px;
+            display: none;
+            z-index: 1;
+        }
+    }
+}

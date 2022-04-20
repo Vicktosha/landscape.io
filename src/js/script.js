@@ -92,4 +92,13 @@ $(document).ready(function(){
         return false;
     });
 
+    // smooth scroll and page up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1000) {
+            $('.pageUp').fadeIn();
+        } else {
+            $('.pageUp').fadeOut();
+        }
+    });
+
 });

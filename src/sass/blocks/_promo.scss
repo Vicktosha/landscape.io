@@ -1,8 +1,8 @@
 .promo  {
 	height: 600px;
-	padding: 11px 0 0 0;
-	// background: url("../img/bg_2.jpg") center  (center/cover)  no-repeat;
+	background: url("../img/bg_11.png") center (center/cover) no-repeat ;
     // background: #F6F6F6;
+    position: relative;
 
     
 
@@ -17,11 +17,8 @@
     }
 
 	&__wrapper	{
-		margin-top: 15px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // flex-wrap:wrap;
+        width: 100vw;
+        top: 70px;
         position: relative;
 	}
     &__wrapperMain {
@@ -30,16 +27,20 @@
         align-items: center;
     }
     &__wrap {
-        text-align: right;
-        // margin-top: 30px;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 5%;
+        right: 10px;
+        color: azure;
     }
 	&__header	{
         text-shadow: 2px 2px 2px rgb(85, 86, 86);
         text-align: left;
-		font-weight: 700;
+		font-weight: 900;
+        line-height: 1;
 		font-size: 36px;
 		text-transform: uppercase;
 		color: $main-color;
